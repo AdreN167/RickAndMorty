@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Shift2023SummerLiveCoding</string>
+
+    <string name="ruble"> ₽</string>
+    <string name="approved">ОДОБРЕНА</string>
+    <string name="registered">ПРИНЯТА</string>
+    <string name="rejected">ОТКЛОНЕНА</string>
+    <string name="error_try_again">Повторить</string>
+
+    <!--	HistoryFragment-->
+    <string name="history_title">Персонажи</string>
+
+    <!--	DetailsFragment-->
+    <string name="firstNameLabel">Имя</string>
+    <string name="lastNameLabel">Фамилия</string>
+    <string name="phoneLabel">Телефон</string>
+    <string name="periodLabel">Период</string>
+    <string name="periodTemplate">%d мес</string>
+    <string name="percentLabel">Процент</string>
+    <string name="percentTemplate">%.2f%%</string>
+    <string name="dateLabel">Дата</string>
+    <string name="amountLabel">Сумма</string>
+    <string name="statusLabel">Статус</string>
+</resources>
