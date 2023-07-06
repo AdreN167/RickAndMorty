@@ -1,8 +1,10 @@
 package com.example.rickandmorty.data
 
 
+import com.google.gson.GsonBuilder
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 import java.security.SecureRandom
 import java.security.cert.X509Certificate
 import java.util.concurrent.TimeUnit
@@ -37,8 +39,11 @@ class CharacterRepository {
         const val READ_TIMEOUT = 10L
     }
 
+    private val gson = GsonBuilder().create()
+
     private val retrofit = Retrofit.Builder()
         .client(provideOkHttpClientWithProgress())
+        .addConverterFactory(GsonConverterFactory.create(gson))
         .baseUrl(BASE_URL)
         .build()
 
